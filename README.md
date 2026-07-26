@@ -9,3 +9,6 @@ Explicando la arquitectura,
 - Nuestra (golden layer) será un star schema con SCD 2 (nota: el star schema obviamente estará desnormalizado para facilitar el análisis)
 
 todo este proceso lo orquestaremos con Airlfow.
+
+
+Ventajas de usar CDC, principalmente UPSERT, si hay nuevos datos los inserta, si le cambia algo a los datos existentes los actualiza, ya no necesitamos idempotencia
